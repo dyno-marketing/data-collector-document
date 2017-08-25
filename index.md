@@ -12,3 +12,9 @@ Insert the script bellow into the `<head>` element of client’s website
 	});
 </script>
 ```
+# Add source
+custom_fields : {"source": "source_id"}
+
+# Source ID:
+1: Massoffer
+2: Adflex
