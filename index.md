@@ -16,5 +16,15 @@ Insert the script bellow into the `<head>` element of client’s website
 custom_fields : {"source": "source_id"}
 
 # Source ID:
-1: Massoffer
-2: Adflex
+1: Facebook
+
+2: Google
+
+3: Admicro
+
+4: Massoffer
+
+5: Ants
+
+6: Adflex
+
