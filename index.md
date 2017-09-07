@@ -29,10 +29,13 @@ custom_fields : {"source": "source_id"}
 6: Adflex
 
 # Import transaction data api
-
+Each day imports event data from the day before
 ## Import clicks
 Path: /eway/clicks
 * Method: Post
+* Parameter:
+- file: contains event data
+- date: date of events in file
 * Sample:
 ```
 curl -X POST \
@@ -42,6 +45,9 @@ curl -X POST \
   -F file=@test.csv \
   -F date=2017-09-07
 ```
+* Format file:
+- One event per row
+- Format of each row is json: {"click_id":"123213213"}
 * Sample response: 
 ```json
 {"has_error":false}
