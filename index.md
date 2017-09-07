@@ -34,8 +34,8 @@ Each day imports event data from the day before
 Path: /eway/clicks
 * Method: Post
 * Parameter:
-- file: contains event data
-- date: date of events in file
+  - file: contains event data
+  - date: date of events in file
 * Sample:
 ```
 curl -X POST \
@@ -46,8 +46,8 @@ curl -X POST \
   -F date=2017-09-07
 ```
 * Format file:
-- One event per row
-- Format of each row is json: {"click_id":"123213213"}
+  - One event per row
+  - Format of each row is json: {"click_id":"123213213"}
 * Sample response: 
 ```json
 {"has_error":false}
