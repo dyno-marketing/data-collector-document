@@ -12,10 +12,10 @@ Insert the script bellow into the `<head>` element of client’s website
 	});
 </script>
 ```
-# Add source
+## Add source
 custom_fields : {"source": "source_id"}
 
-# Source ID:
+## Source ID:
 1: Facebook
 
 2: Google
@@ -28,3 +28,36 @@ custom_fields : {"source": "source_id"}
 
 6: Adflex
 
+# Import transaction data
+
+### Import clicks
+Path: /eway/clicks
+* Method: Post
+* Sample:
+```
+curl -X POST \
+  http://185.12.178.57:19501/eway/clicks \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
+  -F file=@test.csv \
+  -F date=2017-09-07
+```
+* Sample response: 
+```json
+{"has_error":false}
+```
+
+### Import conversations
+Path: /eway/conversions
+* Method: Post
+* Sample response: 
+```json
+{"has_error":false}
+```
+### Update conversations
+Path: /eway/conversions
+* Method: PUT
+* Sample response: 
+```json
+{"has_error":false}
+```
