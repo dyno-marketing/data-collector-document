@@ -28,9 +28,9 @@ custom_fields : {"source": "source_id"}
 
 6: Adflex
 
-# Import transaction data
+# Import transaction data api
 
-### Import clicks
+## Import clicks
 Path: /eway/clicks
 * Method: Post
 * Sample:
@@ -47,14 +47,14 @@ curl -X POST \
 {"has_error":false}
 ```
 
-### Import conversations
+## Import conversations
 Path: /eway/conversions
 * Method: Post
 * Sample response: 
 ```json
 {"has_error":false}
 ```
-### Update conversations
+## Update conversations
 Path: /eway/conversions
 * Method: PUT
 * Sample response: 
