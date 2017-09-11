@@ -40,10 +40,10 @@ Path: /eway/clicks
 * Sample:
 ```
 curl -X POST \
-  http://localhost:9000/eway/clicks \
+  http://185.12.178.57:19501/eway/clicks \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
-  -d '{"date":"2017-09-11", "hour":"09", "data":[{"conversation_id":"12"}]}'
+  -d '{"date":"2017-09-11", "hour":"09", "data":[{"conversion_id":"12"}]}'
 ```
 * Sample response: 
 ```json
@@ -51,7 +51,7 @@ curl -X POST \
 ```
 * Notes: time is utc
 
-## Import conversations
+## Import conversions
 Path: /eway/conversions
 * Method: Post
 * Sample response: 
