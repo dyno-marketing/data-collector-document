@@ -34,24 +34,22 @@ Each day imports event data from the day before
 Path: /eway/clicks
 * Method: Post
 * Parameter:
-  - file: contains event data
-  - date: date of events in file
+  - data: json array contains event data
+  - date: date of events (format: yyyy-mm-dd)
+  - hour: hour of events (format: HH: 9am -> 09)
 * Sample:
 ```
 curl -X POST \
-  http://185.12.178.57:19501/eway/clicks \
+  http://localhost:9000/eway/clicks \
   -H 'cache-control: no-cache' \
-  -H 'content-type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW' \
-  -F file=@test.csv \
-  -F date=2017-09-07
+  -H 'content-type: application/json' \
+  -d '{"date":"2017-09-11", "hour":"09", "data":[{"conversation_id":"12"}]}'
 ```
-* Format file:
-  - One event per row
-  - Format of each row is json: {"click_id":"123213213"}
 * Sample response: 
 ```json
 {"has_error":false}
 ```
+* Notes: time is utc
 
 ## Import conversations
 Path: /eway/conversions
