@@ -28,6 +28,8 @@ custom_fields : {"source": "source_id"}
 
 6: Adflex
 
+7: Meganet
+
 # Import transaction data api
 Each day imports event data from the day before
 ## Import clicks
