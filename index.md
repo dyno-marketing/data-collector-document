@@ -30,6 +30,8 @@ custom_fields : {"source": "source_id"}
 
 7: Meganet
 
+8: NCT
+
 # Import transaction data api
 Each day imports event data from the day before
 ## Import clicks
