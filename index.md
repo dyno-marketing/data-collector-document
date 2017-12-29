@@ -32,6 +32,14 @@ custom_fields : {"source": "source_id"}
 
 8: NCT
 
+9: Zalo
+
+10: VNG
+
+11: Criteo
+
+12: Acxiom
+
 # Import transaction data api
 Each day imports event data from the day before
 ## Import clicks
