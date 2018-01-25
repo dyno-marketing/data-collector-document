@@ -40,6 +40,8 @@ custom_fields : {"source": "source_id"}
 
 12: Acxiom
 
+13: Viettel Media
+
 # Import transaction data api
 Each day imports event data from the day before
 ## Import clicks
