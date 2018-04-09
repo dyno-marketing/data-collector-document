@@ -42,6 +42,8 @@ custom_fields : {"source": "source_id"}
 
 13: Viettel Media
 
+14: Bibibook
+
 # Import transaction data api
 Each day imports event data from the day before
 ## Import clicks
