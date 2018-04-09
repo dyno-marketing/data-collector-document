@@ -42,7 +42,7 @@ custom_fields : {"source": "source_id"}
 
 13: Viettel Media
 
-14: Bibibook
+14: Bibibook (Mobifone 3G)
 
 # Import transaction data api
 Each day imports event data from the day before
